@@ -1,0 +1,29 @@
+{
+  "name": "habit-coach-backend",
+  "version": "1.0.0",
+  "description": "Hono backend for Habit Coach app",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "build": "tsc",
+    "deploy": "wrangler deploy",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "hono": "^4.6.3",
+    "zod": "^3.23.8",
+    "@hono/node-server": "^1.13.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241022.0",
+    "typescript": "^5.6.3",
+    "tsx": "^4.19.1",
+    "vitest": "^2.1.2",
+    "wrangler": "^3.80.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

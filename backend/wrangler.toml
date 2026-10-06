@@ -1,0 +1,12 @@
+name = "habit-coach-backend"
+main = "src/index.ts"
+compatibility_date = "2024-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ENVIRONMENT = "production"
+
+# Uncomment and configure KV namespace for production use
+# [[kv_namespaces]]
+# binding = "HABIT_STATS"
+# id = "your-kv-namespace-id"
